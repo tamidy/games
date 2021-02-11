@@ -1,29 +1,88 @@
-body {
-  background-color: #BDE0FF;
-  padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* General */
+* {
   margin: 0;
+  padding: 0;
+}
+
+html {
+
+}
+
+body {
+  background-color: white;
+  margin: 0px auto 0px;
   text-align: center;
 }
 
-#titleText {
-	font-family: 'Henny Penny', cursive;
+/* Header */
+header {
+  padding: 30px;
+  margin: 0px 0px 50px;
+}
+
+header h1 {
+  font-family: 'Luckiest Guy', cursive;
 	color: #184F80;
 	font-size: 70px;
 }
 
-#sketch {
-	cursor: move;
+h2 {
+  font-family: 'Hammersmith One', sans-serif;
 }
 
-#bio {
-	padding-bottom: 100px;
+/* Nav bar*/
+nav {
+  text-align: center;
+  margin: 0px auto 0px;
+  padding: 10px;
+  width: 800px;
 }
 
-#bioName {
-
+nav a {
+  text-decoration: none;
+  color: black;
+  padding: 10px;
+  margin: 5px 10px;
 }
 
-#bioText {
-	margin: auto;
-	width: 600px;
+nav a:hover {
+  text-decoration: underline;
+  color: blue;
+  background-color: yellow;
+}
+
+/* Sections - games and sketches */
+section {
+  margin: 70px 0px;
+  cursor: move;
+}
+
+section h2 {
+  margin: 0px 0px 20px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  padding: 50px;
+}
+
+footer h2 {
+  margin: 20px;
+}
+
+footer p {
+  width: 600px;
+  text-align: left;
+  clear: left;
+}
+
+#profilepic {
+  width: 200px;
+  border-radius: 100px;
+  float: left;
 }
