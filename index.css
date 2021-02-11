@@ -8,14 +8,10 @@
   padding: 0;
 }
 
-html {
-
-}
-
 body {
   font-family: 'Roboto', sans-serif;
   background-color: white;
-  margin: 0px auto 0px;
+  margin: 0px auto;
   text-align: center;
 }
 
@@ -52,17 +48,16 @@ nav a {
 
 nav a:hover {
   text-decoration: underline;
-  color: blue;
   background-color: yellow;
 }
 
 /* Sections - games and sketches */
-section {
+.sketch {
   margin: 70px 0px;
   cursor: move;
 }
 
-section h2 {
+.sketch h2 {
   margin: 0px 0px 20px;
   text-align: center;
 }
@@ -70,20 +65,46 @@ section h2 {
 /* Footer */
 footer {
   padding: 50px;
+  width: 1000px;
+  margin: 0px auto 50px;
 }
 
-footer h2 {
+#bio {
   margin: 20px;
 }
 
-footer p {
+#bio h2 {
+  margin: 20px 0px;
+  text-align: left;
+}
+
+#bio p {
   width: 600px;
   text-align: left;
-  clear: left;
+  margin: 0px auto;
 }
 
 #profilepic {
-  width: 200px;
-  border-radius: 100px;
+  width: 250px;
+  border-radius: 50%;
+  border: 7px double black;
   float: left;
+  margin: 0px 30px;
+}
+
+#links {
+  margin: 15px;
+  text-align: left;
+}
+
+#links a {
+  margin: 15px;
+}
+
+.icon {
+  width: 30px;
+}
+
+.icon:hover {
+  width: 40px;
 }
