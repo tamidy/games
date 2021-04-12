@@ -1,18 +1,6 @@
 (function() {
     "use strict";
 
-    //Arrays to hold the names of the games and sketches
-    let nameGame = [
-        "Pirate Ship vs. Sea Monster", 
-        "Rabbit vs. Fox"
-    ];
-
-    let nameSketches = [
-        "Blue", 
-        "Sun and Moon", 
-        "Electric Lasers"
-    ];
-
     //Arrays to hold links to games and sketches
     let games = [
         "https://tamidy.github.io/pirate-ship-vs-sea-monster-js/", 
@@ -39,19 +27,41 @@
     }
 
     function displayGames() {
-        //Showing a list of the games 
-        let list = document.getElementById("itemlist");
-        for (let i=0; i<nameGame.length; i++) {
-            console.log(nameGame[i]);
-            let item = document.createElement("li");
-            item.textContent = nameGame[i];
-            list.appendChild(item);
+        //Checking the item list links
+        let itemlinks = document.querySelectorAll("#itemlist > li > a"); 
+        for (let i=0; i<itemlinks.length; i++) {        
+            itemlinks[i].onclick = display(games[i]);
         }
     }
 
     function displaySketches() {
-        //Showing a list of the sketches
 
+    }
+
+    function display(link) {
+        //Showing the container and hiding the list
+        document.getElementsByClassName("hidden")[0].style.display = "block";
+        document.getElementById("itemlist").style.display = "none";
+
+        //Displaying the game or sketch
+        let hid = document.getElementsByClassName("hidden")[0];
+        let container = document.createElement("section");
+        container.className = "sketch";
+        
+        //Header
+        let heading = document.createElement("h2");
+        heading.style.margin = "0px 0px 20px";
+        heading.style.textAlign = "center";
+
+        //iframe
+        let frame = document.createElement("iframe");
+        frame.src = link;
+        frame.className = "script";
+
+        //Add to parent
+        container.appendChild(heading);
+        container.appendChild(frame);
+        hid.appendChild(container);
     }
 
 }) ();
