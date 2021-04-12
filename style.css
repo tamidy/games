@@ -52,6 +52,16 @@ nav a:hover {
 }
 
 /* Main - games and sketches */
+main {
+  margin: 0 auto;
+  width: 80%;
+}
+
+#itemlist {
+  list-style-type: none;  
+  text-align: left;
+}
+
 .sketch {
   margin: 70px 0px;
   cursor: move;
