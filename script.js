@@ -35,7 +35,11 @@
     }
 
     function displaySketches() {
-
+        //Checking the item list links
+        let itemlinks = document.querySelectorAll("#itemlist > li > a"); 
+        for (let i=0; i<itemlinks.length; i++) {        
+            itemlinks[i].onclick = display(sketches[i]);
+        }
     }
 
     function display(link) {
