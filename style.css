@@ -24,7 +24,7 @@ header {
 header h1 {
   font-family: 'Luckiest Guy', cursive;
 	color: #184F80;
-	font-size: 70px;
+	font-size: 60px;
 }
 
 h2 {
@@ -51,7 +51,7 @@ nav a:hover {
   background-color: yellow;
 }
 
-/* Sections - games and sketches */
+/* Main - games and sketches */
 .sketch {
   margin: 70px 0px;
   cursor: move;
